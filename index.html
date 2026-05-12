@@ -615,14 +615,57 @@
         está preparando para você e seu pet.
       </p>
 
-      <form>
-        <input type="text" placeholder="Digite seu nome" required>
-        <input type="email" placeholder="Digite seu melhor e-mail" required>
+     <form action="https://formsubmit.co/petleader.adm@gmail.com" method="POST">
 
-        <button class="btn btn-primary">
-          QUERO RECEBER NOVIDADES
-        </button>
-      </form>
+  <input 
+    type="text" 
+    name="nome" 
+    placeholder="Digite seu nome"
+    required
+  >
+
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Digite seu melhor e-mail"
+    required
+  >
+
+  <textarea
+    name="mensagem"
+    placeholder="Escreva sua mensagem"
+    required
+    style="
+      width:100%;
+      padding:20px;
+      margin-top:20px;
+      border:none;
+      border-radius:25px;
+      min-height:160px;
+      resize:none;
+      font-size:1rem;
+    "
+  ></textarea>
+
+  <input type="hidden" name="_captcha" value="false">
+
+  <input 
+    type="hidden" 
+    name="_subject" 
+    value="Novo contato - Pet Leader Aclimação"
+  >
+
+  <input 
+    type="hidden" 
+    name="_template" 
+    value="table"
+  >
+
+  <button class="btn btn-primary">
+    ENVIAR MENSAGEM
+  </button>
+
+</form>
 
     </div>
 
